@@ -1,7 +1,7 @@
 import React from 'react';
-import BackButton from './ui/back-button';
 import { Card } from './ui/card';
-import { Briefcase, Users, Target } from 'lucide-react';
+import { TrendingUp, Briefcase, Users, Target, Repeat, DollarSign } from 'lucide-react';
+import BackButton from './ui/back-button';
 
 interface RegionMetrics {
   adBudget: number;
@@ -29,15 +29,15 @@ const RegionalComparison = () => {
       color: "from-blue-500",
       metrics: {
         adBudget: 30541504,
-        qualifiedLeads: 4721,
-        totalLeads: 14983,
-        costPerLead: 2071.17,
-        costPerLeadTotal: 2392.43,
+        qualifiedLeads: 17864,
+        totalLeads: 23524,
+        costPerLead: 1709.67,
+        costPerLeadTotal: 1974.86,
         payroll: 4737320,
-        revenue: 207443247,
-        sales: 2761,
+        revenue: 220799611,
+        sales: 2588,
         repeatedSalesPercent: 34.86,
-        repeatedRevenuePercent: 26.35
+        repeatedRevenuePercent: 22.27
       }
     },
     {
@@ -74,7 +74,7 @@ const RegionalComparison = () => {
     }
   ];
 
-  const formatMoney = (value: number) => {
+  const formatMoney = (value: number): string => {
     return new Intl.NumberFormat('ru-RU', {
       style: 'currency',
       currency: 'RUB',
@@ -82,7 +82,7 @@ const RegionalComparison = () => {
     }).format(value);
   };
 
-  const getWidth = (value: number, maxValue: number) => {
+  const getWidth = (value: number, maxValue: number): string => {
     return `${(value / maxValue) * 100}%`;
   };
 

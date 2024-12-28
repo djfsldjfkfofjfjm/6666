@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from '../components/ui/card';
 import { TrendingUp, Users, Target, DollarSign, Percent, ArrowDown } from 'lucide-react';
+import BackButton from './ui/back-button';
 
 const UAEAnalysis = () => {
   const formatMoney = (value: number) => {
@@ -12,7 +13,8 @@ const UAEAnalysis = () => {
   };
 
   return (
-    <div className="p-8 bg-gradient-to-br from-gray-50 to-gray-100">
+    <div className="p-8 bg-gradient-to-br from-gray-50 to-gray-100 relative">
+      <BackButton />
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-2">Комплексный анализ ОАЭ</h2>
         <p className="text-gray-500 text-center mb-12">Общие показатели и детализация по каналам</p>
