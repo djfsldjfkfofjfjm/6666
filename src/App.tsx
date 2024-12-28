@@ -18,6 +18,7 @@ import YandexFunnels from './components/yandex-funnels';
 import YouTubeFunnel from './components/youtube-funnel';
 import RFFunnel from './components/rf-funnel';
 import UAEAnalysis from './components/uae-analysis';
+import SalesFunnel from './components/sales-funnel';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
             <Route path="/youtube-funnel" element={<YouTubeFunnel />} />
             <Route path="/rf" element={<RFFunnel />} />
             <Route path="/uae" element={<UAEAnalysis />} />
+            <Route path="/sales-funnel" element={<SalesFunnel />} />
           </Routes>
         </main>
       </div>

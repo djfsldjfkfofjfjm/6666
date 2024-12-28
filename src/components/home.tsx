@@ -11,6 +11,17 @@ import {
 const Home = () => {
   const sections = [
     {
+      title: "Общие показатели",
+      cards: [
+        {
+          title: "Воронка продаж",
+          description: "Анализ эффективности маркетинга и продаж",
+          path: '/sales-funnel',
+          icon: <TrendingUp className="w-6 h-6" />
+        }
+      ]
+    },
+    {
       title: "Региональные отчеты",
       cards: [
         {
